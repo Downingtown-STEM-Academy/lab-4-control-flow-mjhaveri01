@@ -9,8 +9,20 @@
  */
 let targetLowerBound = 70
 let targetUpperBound = 90
+let currentAverage = 90
 
-let currentAverage = 67
+let isAverage: Bool = 70 <= currentAverage && currentAverage <= 90
+let isBelowAverage: Bool = currentAverage < 70
+let isAboveAverage: Bool = currentAverage > 90
+
+if isAboveAverage {
+    print("You're right on track!")
+} else if isAverage {
+    print("You're doing great, but try to push it a bit!")
+} else if isBelowAverage {
+    print("You need to study more often.")
+}
+
 //let currentAverage = 85
 //let currentAverage = 95
 
